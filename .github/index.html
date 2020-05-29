@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }div img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            text-align: center;
+        }div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+ <div>
+     <h1>Hello World!</h1>
+    <img src="1.jpg" alt="" srcset="">
+   <p><script>document.write(process.versions.node)</script>,
+    Chrome
+    <script>document.write(process.versions.chrome)</script>,
+    and Electron
+    <script>document.write(process.versions.electron)</script>.</p> 
+ </div>   
+</body>
+
+</html>
